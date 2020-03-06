@@ -1,6 +1,6 @@
 # Habit Trackers
 
-An automation experiment influenced after reading James Clear's book [Atomic Habits](https://jamesclear.com/atomic-habits), who mentions the following [three benefits of habit tracking](https://jamesclear.com/habit-tracker).
+An automation experiment influenced after reading James Clear's book [Atomic Habits](https://jamesclear.com/atomic-habits), who mentions the following [three benefits of habit tracking](https://jamesclear.com/habit-tracker):
 
 - reminds you to act
 - motivates you to continue
