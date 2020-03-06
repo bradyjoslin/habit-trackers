@@ -8,6 +8,6 @@ An automation experiment influenced after reading James Clear's book Atomic Habi
 
 ## Exercise
 
-Data is aggregated from various sources to Strava then pushed to Google Sheets using IFTTT. Heat map automatically updated here daily using a GitHub Action.  Duration gradients are based on 15 minute intervals.
+Data is aggregated from various sources to [Strava](https://www.strava.com/) then pushed to Google Sheets using IFTTT. Heat map automatically updated here daily using a GitHub Action.  Duration gradients are based on 15 minute intervals.
 
 ![img](img/heatmap.png)
