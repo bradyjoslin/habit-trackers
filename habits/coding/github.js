@@ -1,9 +1,9 @@
-
 const puppeteer = require("puppeteer");
 
 const generateExport = async () => {
-  const browser = await puppeteer.launch()
+  const browser = await puppeteer.launch();
   const page = await browser.newPage();
+  page.setViewport({ width: 1000, height: 600, deviceScaleFactor: 1 });
 
   try {
     await page._client.send("Page.setDownloadBehavior", {
@@ -13,7 +13,9 @@ const generateExport = async () => {
 
     await page.goto("https://github.com/bradyjoslin");
 
-    const el = await page.$('#js-pjax-container > div > div.col-lg-9.col-md-8.col-12.float-md-left.pl-md-2 > div.position-relative > div.mt-4.position-relative > div.js-yearly-contributions > div > div');
+    const el = await page.$(
+      "#js-pjax-container > div > div.col-lg-9.col-md-8.col-12.float-md-left.pl-md-2 > div.position-relative > div.mt-4.position-relative > div.js-yearly-contributions > div > div"
+    );
     console.log("Loading site");
     await el.screenshot({ path: "img/github.png" });
     await browser.close();
