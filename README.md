@@ -11,3 +11,12 @@ An automation experiment influenced after reading James Clear's book [Atomic Hab
 Data is aggregated from various sources to [Strava](https://www.strava.com/) then pushed to Google Sheets using IFTTT. Heat map automatically updated here daily using a GitHub Action.  Duration gradients are based on 15 minute intervals.
 
 ![exercise heatmap](img/heatmap.png)
+
+## Coding
+
+Currently only shows GitHub contributions, not code written for work in internal repos.  Screenshot obtained using [Puppeteer's element screenshot](https://github.com/puppeteer/puppeteer/blob/master/docs/api.md#elementhandlescreenshotoptions) capability.
+
+GitHub contributions:
+
+![GitHub contributions](habits/coding/img/github.png)
+
