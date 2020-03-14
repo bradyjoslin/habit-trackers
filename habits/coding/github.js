@@ -3,7 +3,7 @@ const puppeteer = require("puppeteer");
 const generateExport = async () => {
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
-  page.setViewport({ width: 900, height: 600, deviceScaleFactor: 1 });
+  page.setViewport({ width: 800, height: 600, deviceScaleFactor: 1 });
   
   try {
     await page._client.send("Page.setDownloadBehavior", {
