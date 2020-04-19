@@ -25,6 +25,8 @@ jobs:
           pipenv install
           pipenv run python exercise.py
           cd ../coding/
+          sudo apt-get update
+          sudo apt-get install -y libgbm-dev
           npm install
           npm start
       - uses: mikeal/publish-to-github-action@master
