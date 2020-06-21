@@ -14,7 +14,7 @@ const generateExport = async () => {
     await page.goto("https://github.com/bradyjoslin");
 
     const el = await page.$(
-      "#js-pjax-container > div > div.col-lg-9.col-md-8.col-12.float-md-left.pl-md-2 > div.position-relative > div.mt-4.position-relative > div.js-yearly-contributions > div > div"
+      "#js-pjax-container > div > div > div.flex-shrink-0.col-12.col-md-9.mb-4.mb-md-0 > div > div.position-relative > div.mt-4.position-relative > div.js-yearly-contributions"
     );
     console.log("Loading site");
     await el.screenshot({ path: "img/github.png" });
